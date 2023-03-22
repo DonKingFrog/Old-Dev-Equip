@@ -50,11 +50,11 @@
 }
 
 .Navigation #more-icon {
-    width: 25px;
+    width: 40px;
 
     position: absolute;
     top: 50%;
-    left: 35px;
+    left: 55px;
 
     transform: translate(-50%, -50%);
 
