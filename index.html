@@ -1,9 +1,94 @@
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>Test Site</title>
+        <title>DNTech</title>
+        <link rel="icon" href="./StyleSheets/Icons/dntech2-icon.png">
+
+        <link rel="stylesheet" href="./StyleSheets/Navigation.css">
+        <link rel="stylesheet" href="./StyleSheets/Page.css">
+        <link rel="stylesheet" href="./StyleSheets/Footer.css">
+
+        <script src="./Modules/main.js"></script>
+
+        <style>
+            body {
+                background-image: url('./StyleSheets/Backgrounds/test.jpg');
+                background-size: cover;
+
+                height: 100%;
+                width: 100%;
+            }
+        </style>
     </head>
+
     <body>
-        <p>hi</p>
+        <div class="Navigation">
+            <a href="./index.html">
+                <img id="nexus-icon" src="./StyleSheets/Icons/dntech2-icon.png">
+            </a>
+            
+            <input id="check" type="checkbox" onclick="ShowSideBar()">
+            <label for="check">
+                <img id="more-icon" src="./StyleSheets/Icons/menu-icon.png">
+            </label>
+            
+            <a href="https://discord.gg/kaYZcvMceu" target="_blank">
+                <button id="contact-button">Contact</button>  
+            </a>
+                     
+        </div>
+
+        <div class="Sidebar" id="sidebar">
+            <div id="home-section">
+                <img src="./StyleSheets/Icons/home-icon.png">
+                <p>Home</p>
+            </div>
+            
+            <div id="ui-section">
+                <img src="./StyleSheets/Icons/ui-icon.png">
+                <p>User Interfaces</p>
+            </div>
+
+            <div id="system-section">
+                <img src="./StyleSheets/Icons/system-icon.png">
+                <p>Systems</p>
+            </div>
+
+            <div id="models-section">
+                <img src="./StyleSheets/Icons/model-icon.png">
+                <p>3D Models</p>
+            </div>
+
+            <div id="about-section">
+                <img src="./StyleSheets/Icons/about-icon.png">
+                <p>About</p>
+            </div>
+        </div>
+
+        <div class="Page">
+            
+        </div>
+
+        <div class="Footer">
+            <p id="social-text">Socials</p>
+
+            <a href="https://twitter.com/donkingfrog" target="_blank">
+                <img id="twitter" src="./StyleSheets/Icons/twitter-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+                
+            <p id="seperator-1">•</p>
+            
+            <a href="https://www.youtube.com/@donkingfrog" target="_blank">
+                <img id="youtube" src="./StyleSheets/Icons/youtube-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+            
+
+            <p id="seperator-2">•</p>
+
+            <a href="https://discord.gg/kaYZcvMceu" target="_blank">
+                <img id="discord" src="./StyleSheets/Icons/discord-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+        </div>
     </body>
 </html>
