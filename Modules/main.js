@@ -5,7 +5,7 @@ function ShowSideBar(){
         sidebar.style.left = '0px';
         sidebar.style.transition = '0.2s';
     } else {
-        sidebar.style.left = 0 - sidebar.style.width;
+        sidebar.style.left = "-251px";
         sidebar.style.transition = '0.2s';
     }
 }
