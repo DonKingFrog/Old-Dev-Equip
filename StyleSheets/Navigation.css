@@ -171,14 +171,3 @@
 
     transition: 0.25s;
 }
-
-.device-size {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-family: Gotham-Medium;
-    color:white;
-}
