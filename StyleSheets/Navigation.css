@@ -213,14 +213,15 @@
 
     .Navigation #more-icon {
         width: 60px;
+        left: 75px;
     }
 
     .Sidebar {
         position: fixed;
         height: 75%;
-        width: 500px;
+        width: 1000px;
         bottom: 0;
-        left: -251px;
+        left: -1001px;
     }
 }
 
@@ -231,15 +232,16 @@
     }
 
     .Navigation #more-icon {
-        width: 40px;
+        width: 50px;
+        left: 65px;
     }
 
     .Sidebar {
         position: fixed;
         height: 90%;
-        width: 500px;
+        width: 1000px;
         bottom: 0;
-        left: -251px;
+        left: -11001px;
     }
 }
 
@@ -251,14 +253,15 @@
 
     .Navigation #more-icon {
         width: 40px;
+        left: 55px;
     }
 
     .Sidebar {
         position: fixed;
         height: 90%;
-        width: 350px;
+        width: 750px;
         bottom: 0;
-        left: -251px;
+        left: -751px;
     }
 }
 
@@ -270,14 +273,15 @@
 
     .Navigation #more-icon {
         width: 35px;
+        left: 45px;
     }
 
     .Sidebar {
         position: fixed;
         height: 93%;
-        width: 350px;
+        width: 500px;
         bottom: 0;
-        left: -251px;
+        left: -501px;
     }
 }
 
@@ -288,7 +292,8 @@
     }
 
     .Navigation #more-icon {
-        width: 25px;
+        width: 35px;
+        left: 45px;
     }
 
     .Sidebar {
