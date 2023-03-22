@@ -91,3 +91,42 @@
 }
 
 
+.Page #introduction-line2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Gotham-Book;
+    font-size: 20px;
+    color: gray;
+}
+
+.Page #introduction-line2 span {
+    text-decoration: underline;
+    color: #00a2ff;
+
+    cursor: pointer;
+}
+
+.Page #introduction-line2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Gotham-Book;
+    font-size: 20px;
+    color: gray;
+}
+
+.Page #introduction-line2 span {
+    text-decoration: underline;
+    color: #00a2ff;
+
+    cursor: pointer;
+}
