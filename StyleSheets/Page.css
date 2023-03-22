@@ -18,7 +18,93 @@
     src: url("./Fonts/Gotham-Font/Gotham-Bold.otf");
 }
 
+@font-face {
+    font-family: "Gotham-Black";
+    src: url("./Fonts/Gotham-Font/Gotham-Black.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+.Page #introduction-quote {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Gotham-Black;
+    font-size: 75px;
+    color: white;
+}
+
+.Page #introduction-quote span{
+    color: #00a2ff;
+}
+
+.Page #introduction-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    line-height: 30px;
+    text-align: center;
+    font-family: Gotham-Thin;
+    font-size: 30px;
+    color: white;
+}
+
+
+.Page #view-product-button {
+    padding: 5px 15px 5px 15px;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    line-height: 30px;
+    text-align: center;
+    font-family: Gotham-Medium;
+    font-size: 15px;
+    color: white;
+
+    background: linear-gradient(#00a2ff, #007eff);
+    border-radius: 100px;
+    border:none;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Page #view-product-button:hover {
+    padding: 10px 20px 10px 20px;
+
+    transition: 0.2s;
+}
+
+.Page #introduction-line2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: Gotham-Book;
+    font-size: 20px;
+    color: gray;
+}
+
+.Page #introduction-line2 span {
+    text-decoration: underline;
+    color: #00a2ff;
+
+    cursor: pointer;
 }
