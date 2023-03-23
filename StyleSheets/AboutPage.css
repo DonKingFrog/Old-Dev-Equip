@@ -28,6 +28,28 @@
     padding: 0;
 }
 
+.Sidebar #home-section {
+    background-color: rgba(255,255,255,0.05);
+    border-style: solid;
+    border-color: rgba(255,255,255,0.15);
+    border-width: 0 0 1px 0;
+
+    transition: 0.25s;
+}
+
+.Sidebar #home-section img {
+    opacity: 0.75;
+
+    transition: 0.25s;
+}
+
+.Sidebar #home-section p {
+    color:white;
+
+    transition: 0.25s;
+}
+
+
 .Page #introduction-quote {
     position: absolute;
     top: 35%;
