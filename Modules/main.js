@@ -1,11 +1,11 @@
 function ShowSideBar(){
     let sidebar = document.getElementById('sidebar')
-
+    
     if (document.getElementById('check').checked){
         sidebar.style.left = '0px';
         sidebar.style.transition = '0.2s';
     } else {
-        sidebar.style.left = "-251px";
+        sidebar.style.left = (-1 * sidebar.offsetWidth) + "px";
         sidebar.style.transition = '0.2s';
     }
 }
