@@ -313,6 +313,12 @@
     .Navigation #more-icon:hover {
         width: 40px;
     
+        position: absolute;
+        top: 50%;
+        left: 55px;
+
+        transform: translate(-50%, -50%);
+
         transition: 0.15s;
     }
 
