@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DNTech</title>
+        <link rel="icon" href="./StyleSheets/Icons/dntech2-icon.png">
+
+        <meta nam="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./StyleSheets/Navigation.css">
+        <link rel="stylesheet" href="./StyleSheets/3DModelsPage.css">
+        <link rel="stylesheet" href="./StyleSheets/Footer.css">
+
+        <script src="./Modules/main.js"></script>
+
+        <style>
+            body {
+                background-image: url('./StyleSheets/Backgrounds/test.jpg');
+                background-size: auto;
+
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="Navigation">
+            <a href="./index.html">
+                <img id="nexus-icon" src="./StyleSheets/Icons/dntech2-icon.png">
+            </a>
+            
+            <input id="check" type="checkbox" onclick="ShowSideBar()">
+            <label for="check">
+                <img id="more-icon" src="./StyleSheets/Icons/menu-icon.png">
+            </label>
+                     
+        </div>
+
+        <div class="Sidebar" id="sidebar">
+            <a href="./index.html">
+                <div id="home-section">
+                    <img src="./StyleSheets/Icons/home-icon.png" >
+                    <p>Home</p>
+                </div>
+            </a>
+
+            <a href="./Product-User-Interfaces.html">
+                <div id="ui-section">
+                    <img src="./StyleSheets/Icons/ui-icon.png" href="./Product-User-Interfaces.html">
+                    <p>User Interfaces</p>
+                </div>
+            </a>
+
+            <a href="./Product-Systems.html">
+                <div id="system-section">
+                    <img src="./StyleSheets/Icons/system-icon.png" href="./Product-Systems.html">
+                    <p>Systems</p>
+                </div>
+            </a>
+
+            <a href="./Product-3D-Models.html">
+                <div id="models-section">
+                    <img src="./StyleSheets/Icons/model-icon.png" href="./Product-3D-Models.html">
+                    <p>3D Models</p>
+                </div>
+            </a>
+
+            <a href="./about.html">
+                <div id="about-section">
+                    <img src="./StyleSheets/Icons/about-icon.png" href="./about.html">
+                    <p>About</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="Page">
+            <!-- Backup Stuff
+                <p id="introduction-quote">We create Roblox<br>products that <span>work</span></b></p>
+                <p id="introduction-line">DNTech is a Roblox company that's focused on making <br>free products in all sections!</p>br></p>
+
+                <a href="./products.html">
+                    <button id="view-product-button">View Products</button>
+                </a>
+
+                <a href="./about.html">
+                    <p id="introduction-line2">The founder/developer of these products is DonKingFrog! <span> Learn more</span></p>
+                </a>
+            -->
+        </div>
+
+        <div class="Footer">
+            <p id="social-text">Socials</p>
+
+            <a href="https://twitter.com/donkingfrog" target="_blank">
+                <img id="twitter" src="./StyleSheets/Icons/twitter-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+                
+            <p id="seperator-1">•</p>
+            
+            <a href="https://www.youtube.com/@donkingfrog" target="_blank">
+                <img id="youtube" src="./StyleSheets/Icons/youtube-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+            
+
+            <p id="seperator-2">•</p>
+
+            <a href="https://discord.gg/kaYZcvMceu" target="_blank">
+                <img id="discord" src="./StyleSheets/Icons/discord-icon.png" onpointerenter="SocialUp()" onpointerleave="SocialDown()">
+            </a>
+        </div>
+    </body>
+</html>
