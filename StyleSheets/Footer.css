@@ -71,7 +71,7 @@
     left: 46.5%;
     
     transform: translate(-50%, -50%);
-
+    
     width: 25px;
 
     border-radius: 100px;
@@ -128,9 +128,9 @@
 
     position: absolute;
     top: 65%;
-    right: 46.5%;
+    left: 53%;
     
-    transform: translate(50%, -50%);
+    transform: translate(-50%, -50%);
 
     width: 25px;
 
