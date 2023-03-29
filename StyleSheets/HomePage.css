@@ -49,6 +49,15 @@
     transition: 0.25s;
 }
 
+.Page {
+    display: block;
+    
+    position: absolute;
+    bottom: 10%;
+
+    width: 100%;
+    height: 83%;
+}
 
 .Page #introduction-quote {
     position: absolute;

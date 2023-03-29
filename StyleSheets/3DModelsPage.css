@@ -50,50 +50,205 @@
 }
 
 
-.Page #introduction-quote {
+.Page {
+    display: block;
+
     position: absolute;
-    top: 35%;
+    bottom: 10%;
+
     left: 50%;
+    transform: translateX(-50%);
 
-    transform: translate(-50%, -50%);
-
-    text-align: center;
-    font-family: Gotham-Black;
-    font-size: 75px;
-    color: white;
+    width: 90%;
+    height: 83%;
 }
 
-.Page #introduction-quote span{
-    color: #00a2ff;
+.Page #page-name {
+    display: block;
+    height: 75px;
+
+    margin-top: 50px;
+
+    border-width: 0 0 1px 0;
+    border-style: solid; 
+    border-color: rgba(50, 50, 50, 1);
 }
 
 
-.Page #introduction-line {
+.Page #page-name #title {
+    display: block;
+    position: relative;
+
+    height: 50%;
+}
+
+.Page #page-name #description {
+    display: block;
+    position: relative;
+
+    height: 50%;
+}
+
+
+.Page #page-name #title img {
+    display: inline-block;
+
+    vertical-align: middle;
+
     position: absolute;
-    top: 50%;
-    left: 50%;
+    height: 100%; 
+}
 
-    transform: translate(-50%, -50%);
+.Page #page-name #title p {
+    display: inline-block;
+    position: absolute;
+    
+    margin-left: 50px;
 
-    line-height: 30px;
-    text-align: center;
-    font-family: Gotham-Thin;
+    vertical-align: middle;
+
+    font-family: Gotham-Book;
     font-size: 30px;
+
     color: white;
 }
 
 
-.Page #view-product-button {
-    padding: 5px 15px 5px 15px;
+.Page #page-name #description #text1 {
+    display: inline-block;
+    position: absolute;
+    
+    margin-left: 5px;
+    margin-top: 5px;
+
+    vertical-align: middle;
+
+    font-family: Gotham-Book;
+    font-size: 20px;
+
+    color: #5a5a5a;
+}
+
+.Page #page-name #description #text1 span {
+    margin-left: 5px;
+
+    border-bottom: 1px solid #45bbff;
+    
+    color: #00a2ff;
+
+    cursor: pointer;
+}
+
+.Page #page-name #description #text2 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    
+    margin-top: 5px;
+    
+    vertical-align: middle;
+
+    font-family: Gotham-Book;
+    font-size: 20px;
+
+    color: #00a2ff;
+    text-align: right;
+}
+
+
+
+.Page #product-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    top: 2%;
+
+    width: 100%;
+    height: 79%;
+}
+
+.product {
+    display: inline-block;
+    position: relative;
+
+    margin-right: 10px;
+
+    width: 30%;
+    height: 100%;
+
+    border-radius: 5px;
+
+    background-color: #00000077;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.product img {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 50%; transform: translateX(-50%);
+    
+    width: 85%;
+
+    border-radius: 5px;
+}
+
+.product #product-title {
+    display: inline-block;
+    position: absolute;
+    top: 275px;
+    left: 50%; transform: translateX(-50%);
+
+    margin-top: 15px;
+
+    width: 90%;
+
+    padding-top: 15px;
+
+    vertical-align: middle;
+
+    font-family: Gotham-Book;
+    font-size: 30px;
+    text-align: center;
+    
+    color: white;
+
+    border-top: 1px solid rgba(255,255,255, 0.15);
+}
+
+.product #product-description {
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    padding-bottom: 10px;
+
+    vertical-align: middle;
+
+    font-family: Gotham-Book;
+    font-size: 20px;
+    text-align: center;
+
+    color: #5a5a5a;
+}
+
+
+.Download-Button {
+    padding: 10px 20px 10px 20px;
 
     position: absolute;
-    top: 60%;
-    left: 50%;
+    bottom: 7%;
+    left: 50%; transform: translateX(-50%);
 
     width: 150px;
     height: 50px;
 
-    transform: translate(-50%, -50%);
+    
 
     line-height: 30px;
     text-align: center;
@@ -109,7 +264,7 @@
     transition: 0.2s;
 }
 
-.Page #view-product-button:hover {
+.Download-Button:hover {
     padding: 10px 20px 10px 20px;
     
     width: 165px;
@@ -117,128 +272,16 @@
     transition: 0.2s;
 }
 
-
-.Page #introduction-line2 {
+#Link {
     position: absolute;
-    top: 85%;
-    left: 50%;
+    bottom: 3%;
+    left: 50%; transform: translateX(-50%);
 
-    transform: translate(-50%, -50%);
-
-    text-align: center;
     font-family: Gotham-Book;
-    font-size: 20px;
-    color: gray;
-}
+    font-size: 14px;
 
-.Page #introduction-line2 span {
-    text-decoration: underline;
     color: #00a2ff;
+    text-align: center;
 
     cursor: pointer;
-}
-
-.Page #introduction-line2 {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    text-align: center;
-    font-family: Gotham-Book;
-    font-size: 20px;
-    color: gray;
-}
-
-.Page #introduction-line2 span {
-    text-decoration: underline;
-    color: #00a2ff;
-
-    cursor: pointer;
-}
-
-@media (max-width: 600px) {
-    .Page #view-product-button {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-    
-        width: 300px;
-        height: 100px;
-    
-        transform: translate(-50%, -50%);
-        
-        font-size: 30px;
-    }
-    
-
-    .Page #introduction-line2 {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-    
-        transform: translate(-50%, -50%);
-    
-        width: 500px;
-
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 750px) {
-
-    .Page #view-product-button {    
-        position: absolute;
-        top: 60%;
-        left: 50%;
-    
-        width: 300px;
-        height: 100px;
-    
-        transform: translate(-50%, -50%);
-    
-        font-size: 30px;
-    }
-    
-
-    .Page #introduction-line2 {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-    
-        transform: translate(-50%, -50%);
-    
-        width: 1000px;
-
-        font-size: 25px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .Page #view-product-button {    
-        position: absolute;
-        top: 60%;
-        left: 50%;
-    
-        width: 150px;
-        height: 50px;
-    
-        transform: translate(-50%, -50%);
-    
-        font-size: 15px;
-    }
-    
-    .Page #introduction-line2 {
-        position: absolute;
-        top: 85%;
-        left: 50%;
-    
-        transform: translate(-50%, -50%);
-    
-        width: 750px;
-
-        font-size: 20px;
-    }
 }
