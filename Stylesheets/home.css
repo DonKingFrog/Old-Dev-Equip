@@ -23,10 +23,18 @@ body {
     overflow: hidden;
 }
 
-body #copyright {
+.bottom #copyright {
     font-family: "GothamBook";
     font-size: 10px;
     color: #fff;
+
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    
+    text-align: center;
 }
 
 .cover {
