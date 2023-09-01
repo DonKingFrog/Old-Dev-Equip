@@ -23,6 +23,12 @@ body {
     overflow: hidden;
 }
 
+body #copyright {
+    font-family: "GothamBook";
+    font-size: 10px;
+    color: #fff;
+}
+
 .cover {
     display: inline-block;
     width: 100%;
