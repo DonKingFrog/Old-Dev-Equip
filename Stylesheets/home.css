@@ -25,11 +25,12 @@ body {
 
 .bottom #copyright {
     font-family: "GothamBook";
-    font-size: 10px;
+    font-size: 13px;
     color: #fff;
+    opacity: 50%;
 
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 50%;
 
     transform: translateX(-50%);
