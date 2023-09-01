@@ -13,15 +13,15 @@
     src: url(./Fonts/Gotham-Font/GothamBold.ttf);
 }
 
--moz-user-select: none;
-
--webkit-user-select: none;
-
-user-select: none;
-
 * {
     margin: 0;
     padding: 0;
+
+    -moz-user-select: none;
+
+    -webkit-user-select: none;
+
+    user-select: none;
 }
 
 body {
