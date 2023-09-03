@@ -1,4 +1,7 @@
 (function () {
+    const serverUnixTimestampIP = fetch("https://api.ipify.org/?format=json")
+    console.log(serverUnixTimestampIP)
+    
     const second = 1000,
             minute = second * 60,
             hour = minute * 60,
