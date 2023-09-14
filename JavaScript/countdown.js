@@ -1,4 +1,4 @@
-(function () {    
+(function () {
     const second = 1000,
             minute = second * 60,
             hour = minute * 60,
@@ -7,7 +7,7 @@
     const countDown = new Date("September 15, 2023 20:00:00").getTime(),
         x = setInterval(function() {    
 
-            const now = new Date("September 15, 2023 11:13:00").getTime(),
+            const now = new Date().getTime(),
                 distance = countDown - now;
 
             document.getElementById("days").innerText = Math.floor(distance / (day)),
