@@ -4,7 +4,7 @@
             hour = minute * 60,
             day = hour * 24;
 
-    const countDown = new Date("09/15/2023").getTime(),
+    const countDown = new Date("09/15/2023").getTime(), countDown.hour += 20
         x = setInterval(function() {    
 
             const now = new Date().getTime(),
