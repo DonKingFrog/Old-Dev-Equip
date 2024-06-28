@@ -11,9 +11,7 @@
     color: #fff;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 .background-image {
 
@@ -384,12 +382,12 @@ body {
     position: absolute;
     width: 100%;
 
-    padding: 50px 100px 200px 100px;
+    padding: 50px 100px 77px 100px;
 }
 
 
 .footer .socials {
-
+    
     display: flex;
     justify-content: left;
     flex-direction: column;
