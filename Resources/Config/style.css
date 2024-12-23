@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 14px;
+
+    color: white;
+}
+
+img {
+    width: 15px;
+}
+
+:root {
+    --a: #3C43FE;
+    --b: #2F9FF9;
+    --c: #161A40;
+    --d: #0D0E2D;
+    --e: #281844;
+
+
+    --background: #272a35;
+    --titlebar: #2f3342;
+    --titlebarBorder: #414557;
+    --titleColor: #dbdee7;
+}
+
+
+
+/* Code Block */
+.codeblock { margin: 15px;
+    display: flex;
+    flex-direction: column;
+
+    width: 650px;
+    background-color: var(--background);
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.codeblock .titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+
+    color: var(--titleColor);
+
+    height: 35px;
+    background-color: var(--titlebar);
+
+    border-bottom: 1px solid var(--titlebarBorder);
+}
+
+.codeblock .titlebar button {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    background: transparent;
+    border: none;
+
+    opacity: 50%;
+
+    cursor: pointer;
+}
+
+.codeblock .titlebar button:hover {
+    opacity: 100%;
+}
+
+.codeblock .titlebar button img {
+    width: 11px;
+}
+
+.codeblock .titlebar button span {
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+
+/* Override Prism.js default background */
+code[class*="language-"],
+pre[class*="language-"] {
+    background: none !important;
+    padding: 0;
+    margin: 0;
+}
+

@@ -1,0 +1,112 @@
+/* DARK */
+:root {
+    --accent: #0078D4;
+    --darkAccent: #015ea5;
+
+
+    /* Header */
+    --headerBackground: #161a20;
+    --headerBorder: #ffffff1f;
+    --navigationText: #ffffff;
+
+
+
+    /* Dropdown */
+    --dropdownBackground: #161a20;
+    --dropdownBorder: #ffffff1f;
+    --dropdownButton: #ffffff13;
+    --dropdownText: #bbbbbb;
+
+
+
+    /* Background */
+    --background: #0d1117;
+    --frameBackground: #161a20;
+    --frameBorder: #ffffff1f;    
+
+    
+
+    /* Text */
+    --title: #ffffff;
+    --text: #333333;
+    --descriptionTitle: #666666;
+    --descriptionSubTitle: #cfcfcf;
+    --description: #777777;
+    --descriptionBold: #888888;
+    --profileText: #666666;
+    --valueText: #aaaaaa;
+    --categoryText: #eaeaea;
+    --buttonText: #ffffff;
+    --hoverText: #000000;
+
+
+
+    /* Star */
+    --star: #aaaaaa;
+    --unstar: #bbbbbb;
+
+
+
+    /* Footer */
+    --footerBackground: #161a20;
+    --footerBorder: #ffffff1f;
+    --footerTitle: #8e9197;
+    --footerText: #535861;
+    --footerSocials: #535861;
+}
+
+
+/* LIGHT */
+:root {
+    --accent: #0078D4;
+    --darkAccent: #015ea5;
+
+    /* Background */
+    --background: #f5f5f5;
+    --headerBackground: #ffffff;
+    --overlay: #f3f3f3;
+    --frameBackground: #ffffff;
+    --frameBorder: #0000001f;  
+
+    /* Border */
+    --searchBorder: #0000001a;
+    --headerBorder: #0000001f;
+
+    /* Dropdown */
+    --dropdownBackground: #f9f9f9;
+    --dropdownBorder: #e0e0e0;
+    --dropdownButton: #e2e2e2;
+    --dropdownText: #525252;
+
+    /* Text */
+    --title: #242424;
+    --text: #333333;
+    --descriptionTitle: #666666;
+    --descriptionSubTitle: #242424;
+    --description: #777777;
+    --descriptionBold: #666666;
+    --profileText: #4755699e;
+    --valueText: #475569;
+    --categoryText: #363636;
+    --buttonText: #ffffff;
+    --searchPlaceholderText: #333333a1;
+    --searchText: #333333;
+    --hoverText: #000000;
+
+
+    /* Navigation */
+    --navigationText: #242424;
+
+
+    /* Star */
+    --star: #475569;
+    --unstar: #bbbbbb;
+
+
+    /* Footer */
+    --footerBackground: #eaeaea;
+    --footerBorder: #aaaaaa;
+    --footerTitle: #242424;
+    --footerText: #333333;
+    --footerSocials: #4755699e;
+}
