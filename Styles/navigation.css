@@ -12,10 +12,13 @@ header {
     height: 57px;
 
     background-color: var(--headerBackground);
-    box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.15);
     /* border-bottom: 1px solid var(--headerBorder); */
 
     z-index: 5;
+}
+
+header.header-shadow {
+    box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
@@ -491,7 +494,7 @@ header {
     
         border-bottom: 2px solid #ffffff00;
     
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         color: var(--navigationText);
         
@@ -517,7 +520,7 @@ header {
         border: none;
         border-bottom: 2px solid #ffffff00;
     
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 500;
         color: var(--navigationText);
         
