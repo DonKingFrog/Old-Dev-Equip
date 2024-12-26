@@ -1,29 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Segoe UI", sans-serif;
-    text-decoration: none;
-    letter-spacing: normal;
-}
-
 body {
     background-color: var(--background);
 }
 
-.horizontal-container {
+.page .horizontal-container {
     display: flex;
     justify-content: space-between;
 }
 
-.frame {
+.page .frame {
     background-color: var(--frameBackground);
     border: 1px solid var(--frameBorder);
     border-radius: 15px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.wrapper {
+.page .wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -36,7 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-.bottom-border {
+.page .bottom-border {
     padding-bottom: 12px;
     margin-bottom: 12px;
     border-bottom: 1px solid var(--headerBorder);
@@ -101,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 15px;
+    gap: 12px;
 
     width: 260.5px;
     height: auto;
@@ -138,7 +129,7 @@ body {
     width: 100%;
 
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 24.5px;
     text-wrap: wrap;
     color: #4c4d52;
@@ -146,7 +137,7 @@ body {
 
 .page h2 .version {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     color: #7f8085; 
 }
 

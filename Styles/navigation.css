@@ -1,24 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Segoe UI", sans-serif;
-    text-decoration: none;
-}
-
 header {
     position: fixed;
     width: 100%;
     height: 57px;
 
     background-color: var(--headerBackground);
-    /* border-bottom: 1px solid var(--headerBorder); */
 
     z-index: 5;
 }
 
 header.header-shadow {
     box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.15);
+}
+
+header.header-border {
+    border-bottom: 1px solid var(--headerBorder);
 }
 
 @media screen and (min-width: 200px) and (max-width: 800px) {
@@ -466,16 +461,22 @@ header.header-shadow {
         justify-content: left;
         align-items: center;
         gap: 10px;
+    }
     
-        font-size: 18px;
+    header .left .logo p {
+        margin-top: 5px;
+
+        font-family: "Josefin Sans";
+        font-size: 20px;
         font-weight: 600;
         letter-spacing: -0.2px;
+        text-align: center;
         color: var(--title);
     }
     
     header .left .logo img {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     
     header .left .nav {
@@ -494,8 +495,8 @@ header.header-shadow {
     
         border-bottom: 2px solid #ffffff00;
     
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 600;
         color: var(--navigationText);
         
         cursor: pointer;
@@ -520,8 +521,8 @@ header.header-shadow {
         border: none;
         border-bottom: 2px solid #ffffff00;
     
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 600;
         color: var(--navigationText);
         
         cursor: pointer;
@@ -569,8 +570,8 @@ header.header-shadow {
         justify-content: left;
         padding: 5px; 
     
-        background-color: var(--dropdownBackground);
-        border: 1px solid var(--dropdownBorder);
+        background-color: var(--frameBackground);
+        border: 1px solid var(--frameBorder);
         border-radius: 10px;
     }
     
@@ -583,14 +584,14 @@ header.header-shadow {
         background-color: transparent;
         border-radius: 8px;
 
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 600;
         color: var(--dropdownText);
         text-decoration: none;
     }
     
     header .left .dropdown-box .content a:hover {
-        background-color: var(--dropdownButton);
+        background-color: var(--frameBorder);
     }
     
     
@@ -623,7 +624,8 @@ header.header-shadow {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+        gap: 8px;
+
         height: 16px;
         padding: 8px 16px;
     
@@ -635,12 +637,20 @@ header.header-shadow {
         background-color: var(--darkAccent);
     }
         
+    header .right .donate svg {
+        width: 15px;
+        
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--buttonText);
+    }
+
     header .right .donate p {
         width: auto;
         height: auto;
         
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
         color: var(--buttonText);
     }
 

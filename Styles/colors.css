@@ -1,62 +1,39 @@
-/* DARK */
-:root {
-    --accent: #0078D4;
-    --darkAccent: #015ea5;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-    /* Header */
-    --headerBackground: #161a20;
-    --headerBorder: #ffffff1f;
-    --navigationText: #ffffff;
-
-
-
-    /* Dropdown */
-    --dropdownBackground: #161a20;
-    --dropdownBorder: #ffffff1f;
-    --dropdownButton: #ffffff13;
-    --dropdownText: #bbbbbb;
-
-
-
-    /* Background */
-    --background: #0d1117;
-    --frameBackground: #161a20;
-    --frameBorder: #ffffff1f;    
-
-    
-
-    /* Text */
-    --title: #ffffff;
-    --text: #333333;
-    --descriptionTitle: #666666;
-    --descriptionSubTitle: #cfcfcf;
-    --description: #777777;
-    --descriptionBold: #888888;
-    --profileText: #666666;
-    --valueText: #aaaaaa;
-    --categoryText: #eaeaea;
-    --buttonText: #ffffff;
-    --hoverText: #000000;
-
-
-
-    /* Star */
-    --star: #aaaaaa;
-    --unstar: #bbbbbb;
-
-
-
-    /* Footer */
-    --footerBackground: #161a20;
-    --footerBorder: #ffffff1f;
-    --footerTitle: #8e9197;
-    --footerText: #535861;
-    --footerSocials: #535861;
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
 }
 
+* {
+    margin: 0;
+    padding: 0;
 
-/* LIGHT */
+    font-family: "Segoe UI";
+    text-decoration: none;
+}
+
 :root {
     --accent: #0078D4;
     --darkAccent: #015ea5;
@@ -72,20 +49,18 @@
     --searchBorder: #0000001a;
     --headerBorder: #0000001f;
 
-    /* Dropdown */
-    --dropdownBackground: #f9f9f9;
-    --dropdownBorder: #e0e0e0;
-    --dropdownButton: #e2e2e2;
-    --dropdownText: #525252;
-
     /* Text */
     --title: #242424;
     --text: #333333;
     --descriptionTitle: #666666;
     --descriptionSubTitle: #242424;
-    --description: #777777;
+    --description: #363636;
+    --infoText: #aaaaaa;
+    --infoBold: #747474;
+    --altText: #919191;
     --descriptionBold: #666666;
-    --profileText: #4755699e;
+    --dropdownText: #525252;
+    --profileText: #475569;
     --valueText: #475569;
     --categoryText: #363636;
     --buttonText: #ffffff;
@@ -95,7 +70,7 @@
 
 
     /* Navigation */
-    --navigationText: #242424;
+    --navigationText: #242424c7;
 
 
     /* Star */
