@@ -659,6 +659,6 @@ header.header-border {
     }
 }
 
-header .services {
+header .services.link{
     display: none;
 }
