@@ -658,3 +658,7 @@ header.header-border {
         display: none;
     }
 }
+
+header .left .nav .services {
+    display: none;
+}
