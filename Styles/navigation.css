@@ -659,6 +659,6 @@ header.header-border {
     }
 }
 
-header .left .nav .services {
+header .services {
     display: none;
 }
