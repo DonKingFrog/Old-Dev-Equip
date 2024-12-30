@@ -215,6 +215,10 @@ body {
     color: var(--buttonText);
 }
 
+.page .action .download .button:hover {
+    background-color: var(--darkAccent);
+}
+
 .page .action .download .content {
     display: flex;
     flex-direction: column;
@@ -261,6 +265,10 @@ body {
     font-weight: 600;
     text-decoration: underline;
     color: var(--accent);
+}
+
+.page .action .download .content a:hover {
+    color: var(--text);
 }
 
 .page .action .details {
@@ -315,6 +323,9 @@ body {
     color: var(--accent);
 }
 
+.page .action .bugreport a:hover {
+    color: var(--text);
+}
 
 
 /*  */
@@ -454,4 +465,8 @@ body {
     font-weight: 500;
     text-decoration: underline;
     color: var(--accent);
+}
+
+.page .information a:hover {
+    color: var(--text);
 }
