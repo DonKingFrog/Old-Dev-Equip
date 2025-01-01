@@ -49,6 +49,8 @@ body {
     align-items: left;
     gap: 19px;
 
+    min-width: 100px;
+
     position: relative;
     margin: 0 332px;
     padding: 87px 0px;
