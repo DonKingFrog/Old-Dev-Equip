@@ -75,23 +75,17 @@ body {
     color: var(--accent);
 }
 
-.page .container {
+
+.page .content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: left;
     gap: 30px;
 
-    padding-bottom: 10px;
     overflow-x: auto;
 }
 
-
-
-
-
-
-.page .container a {
+.page .content a {
     flex-shrink: 0;
     flex-grow: 0;
 
@@ -100,24 +94,22 @@ body {
     justify-content: left;
     gap: 12px;
 
-    width: 350px;
+    width: 260.5px;
     height: auto;
-
-    border-radius: 12px 12px 8px 8px;
-
-    overflow: hidden;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .page .image {
-    margin-bottom: 15px;
-    width: 350px;
-    height: 171px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+
+    width: 261px;
+    height: 147px;
 
     overflow: hidden;
 }
 
-.page .image img {
+.page img {
     position: relative;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
     width: 100%;
@@ -126,83 +118,36 @@ body {
     transition: ease 0.25s;
 }
 
-.page .image img:hover {
+.page img:hover {
     width: 103%;
     height: 103%;
 
     transition: ease 0.25s;
 }
 
-.page .content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0 15px 15px 15px;
-
-    height: 75px;
-}
-
-.page .content h3 {
-    width: 100%;
-
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-wrap: wrap;
-    color: var(--infoText);
-}
-
-.page .content h2 {
+.page h2 { 
     width: 100%;
 
     font-size: 21px;
     font-weight: 600;
     line-height: 24.5px;
     text-wrap: wrap;
-    color: var(--text);
+    color: #4c4d52;
 }
 
-.page .content h2 .version {
+.page h2 .version {
     font-size: 15px;
     font-weight: 600;
     color: #7f8085; 
 }
 
-.page .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 15px 15px 15px;
-    margin-top: 8px;
+.page p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7f8085;
 }
 
-.page .bottom .read {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-}
-
-.page .bottom .read p {
-    align-items: center;
-
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: var(--infoText);
-}
-
-.page .bottom .read svg {
-    width: 12px;
-    rotate: -90deg;
-}
-
-.page .bottom .read svg path {
-    fill: var(--infoText);
-}
-
-.page .bottom sup {
+.page sup {
     font-size: 14px;
     font-weight: 600;
     color: #363636;
