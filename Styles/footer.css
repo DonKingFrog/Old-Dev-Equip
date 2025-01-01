@@ -72,6 +72,14 @@ footer .socials .wrapper {
 footer .socials svg { 
     width: 20px;
     height: 20px;
+    padding: 5px;
+
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+footer .socials svg:hover {
+    background-color: var(--frameBorder);
 }
 
 footer .socials svg path {
