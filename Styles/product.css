@@ -2,471 +2,1416 @@ body {
     background-color: var(--background);
 }
 
-.page .frame {
-    background-color: var(--frameBackground);
-    border: 1px solid var(--frameBorder);
-    border-radius: 15px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-.page .horizontal-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.page .wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.page .bottom-border {
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid var(--headerBorder);
-}
-
-
-
-/*  */
-
-
-
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 19px;
-
-    position: relative;
-    margin: 0 332px;
-    padding: 87px 0px;
-}
-
-.page .main {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 19px;
-    position: relative;
-    width: 100%;
-    height: 440px;
-}
-
-.page .thumbnail {
-    flex-grow: 1;
-    flex-shrink: 1;
-
-    position: relative;
-    width: 826px;
-
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.page .action {
-    flex-grow: 0;
-    flex-shrink: 0;
-
-    position: relative;
-    width: 400px;
-    padding: 20px 19px;
-
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.page .information { 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: auto;
-
-    padding-bottom: 15px;
-
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-
-/*  */
-
-
-
-.page .thumbnail .current {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/*  */
-
-
-
-.page .action .about { 
-    display: flex;
-    flex-direction: row;
-    gap: 17px;
-}
-
-.page .action .about img { 
-    width: 75px;
-    height: 75px;
-
-    background-color: transparent;
-    border-radius: 8px;;
-}
-
-.page .action .about .content { 
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 7px;
-
-    width: 100%;
-}
-
-.page .action .about .content .title { 
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--title);
-}
-
-.page .action .about .content .bottom { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.page .action .about .content .bottom .profile { 
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-
-.page .action .about .content .bottom .profile img {
-    width: 18px;
-    height: 18px;
-
-    background-color: transparent;
-    border-radius: 28px;
-}
-
-.page .action .about .content .bottom .profile p {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--profileText);
-}
-
-.page .action .about .content .bottom .reviews {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.page .action .about .content .bottom .reviews svg {
-    width: 14px;
-    height: 14px;
-    margin-right: 1px;
-}
-
-.page .action .about .content .bottom .reviews svg path {
-    fill: var(--unstar);
-}
-
-.page .action .about .content .bottom .reviews .active-star path {
-    fill: var(--star);
-}
-
-.page .action .about .content .bottom .reviews p {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--valueText);
-}
-
-.page .action .download .content .download-icon {
-    width: 14px;
-    height: 14px;
-}
-
-.page .action .download { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.page .action .download .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 220px;
-    height: 40px;
-
-    background-color: var(--accent);
-    border-radius: 4px;
-
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--buttonText);
-}
-
-.page .action .download .button:hover {
-    background-color: var(--darkAccent);
-}
-
-.page .action .download .content {
-    display: flex;
-    flex-direction: column;
-}
-
-.page .action .download .content span {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page .action .download .content .price {
-    font-size: 14px;
-    font-weight: 600;
-
-    color: var(--valueText);
-}
-
-.page .action .download .content span div {
-    display: flex;
-    flex-direction: reverserow;
-    align-items: center;
-    gap: 5px;
-}
-
-.page .action .download .content .download-icon { 
-    width: 10px;
-    height: 10px;
-}
-
-.page .action .download .content .download-icon path {
-    fill: var(--valueText);
-}
-
-.page .action .download .content .download-count {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--valueText);
-}
-
-.page .action .download .content a {
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: underline;
-    color: var(--accent);
-}
-
-.page .action .download .content a:hover {
-    color: var(--text);
-}
-
-.page .action .details {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.page .action .details h2 {
-    margin-top: 5px;
-    margin-bottom: 2px;
-
-    font-size: 15px;
-    font-weight: 900;
-    color: var(--categoryText);
-}
-
-.page .action .details p {
-    display: flex;
-    justify-content: space-between;
-
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--valueText);
-}
-
-.page .action .details p span {
-    color: var(--profileText);
-}
-
-.page .action .bugreport {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    position: absolute;
-    width: 100%;
-    bottom: -5px;
-}
-
-.page .action .bugreport p {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--valueText);
-}
-
-.page .action .bugreport a {
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: underline;
-    color: var(--accent);
-}
-
-.page .action .bugreport a:hover {
-    color: var(--text);
-}
-
-
-/*  */
-
-
-
-.page .information .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 40px;
+@media screen and (min-width: 200px) and (max-width: 1080px) {
+    .page .frame {
+        background-color: var(--frameBackground);
+        border: 1px solid var(--frameBorder);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    }
     
-    width: 100%;
-    height: 57px;
-    padding: 0 40px;
-
-    background-color: var(--frameBackground);
-    border-bottom: 1px solid var(--frameBorder);
-}
-
-.page .information .navigation button.active {
-    border-bottom: 2px solid var(--accent);
-    color: var(--accent);
-    transition: ease 0.1s;
-}
-
-.page .information .navigation button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
-    background-color: transparent;
-    border: none;
-    outline: none;
-
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--categoryText);
-
-    cursor: pointer;
-    transition: ease 0.1s;
-}
-
-.page .information .navigation button:hover {
-    border-bottom: 2px solid var(--accent);
-    color: var(--accent);
-    transition: ease 0.1s;
-}
-
-.page .information .section {
-    display: none;
-    flex-direction: column;
-    gap: 25px;
+    .page .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
     
-    padding: 15px 40px;
-}
-
-.page .information .active {
-    display: flex;
-}
-
-.page .information .section p {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--description);
-}
-
-
-
-.page .information .overview h1 {
-    margin-bottom: 5px;
-
-    font-size: 14.5px;
-    font-weight: 600;
-    color: var(--descriptionSubTitle);
-}
-
-.page .information .overview h2 {
-    margin-top: 25px;
-    margin-bottom: 5px;
+    .page .bottom-border {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--headerBorder);
+    }
     
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--description);
+    
+    
+    /*  */
+    
+    
+    
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    
+        padding-bottom: 100px;
+        position: relative;
+    }
+    
+    .page .main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 19px;
+
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    .page .thumbnail {    
+        position: relative;
+        width: 100%;
+    
+        box-sizing: border-box;
+    }
+
+    .page .thumbnail.frame {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .page .action {
+        position: relative;
+        width: 100%;
+        padding: 25px 25px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .page .information { 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+        padding-bottom: 15px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .thumbnail .current {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    /*  */
+    
+    
+    
+    .page .action .about { 
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+    }
+    
+    .page .action .about img { 
+        width:300px;
+        height:300px;
+    
+        background-color: transparent;
+        border-radius: 25px;;
+    }
+    
+    .page .action .about .content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 7px;
+    
+        width: 100%;
+    }
+    
+    .page .action .about .content .title { 
+        font-size: 65px;
+        font-weight: 700;
+        color: var(--title);
+    }
+    
+    .page .action .about .content .bottom { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .page .action .about .content .bottom .profile { 
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .page .action .about .content .bottom .profile img {
+        width: 50px;
+        height: 50px;
+    
+        background-color: transparent;
+        border-radius: 28px;
+    }
+    
+    .page .action .about .content .bottom .profile p {
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--profileText);
+    }
+    
+    .page .action .about .content .bottom .reviews {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .page .action .about .content .bottom .reviews svg {
+        width: 35px;
+        height: 35px;
+        margin-right: 1px;
+    }
+    
+    .page .action .about .content .bottom .reviews svg path {
+        fill: var(--unstar);
+    }
+    
+    .page .action .about .content .bottom .reviews .active-star path {
+        fill: var(--star);
+    }
+    
+    .page .action .about .content .bottom .reviews p {
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content .download-icon {
+        width: 35px;
+        height: 35x;
+    }
+    
+    .page .action .download { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .page .action .download .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 100%;
+        height: 100px;
+        margin-bottom: 25px;
+    
+        background-color: var(--accent);
+        border-radius: 15px;
+    
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--buttonText);
+    }
+    
+    .page .action .download .button:hover {
+        background-color: var(--darkAccent);
+    }
+    
+    .page .action .download .content {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 15px;
+    }
+    
+    .page .action .download .content span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .page .action .download .content .price {
+        font-size: 35px;
+        font-weight: 600;
+    
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content span div {
+        display: flex;
+        flex-direction: reverserow;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .page .action .download .content .download-icon { 
+        width: 35px;
+        height: 35px;
+    }
+    
+    .page .action .download .content .download-icon path {
+        fill: var(--valueText);
+    }
+    
+    .page .action .download .content .download-count {
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content a {
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .download .content a:hover {
+        color: var(--text);
+    }
+    
+    .page .action .details {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    
+    .page .action .details h2 {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    
+        font-size: 35px;
+        font-weight: 900;
+        color: var(--categoryText);
+    }
+    
+    .page .action .details p {
+        display: flex;
+        justify-content: space-between;
+    
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .details p span {
+        color: var(--profileText);
+    }
+    
+    .page .action .bugreport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        margin-top: 100px;
+        margin-bottom: 15px;
+        width: 100%;
+        bottom: -5px;
+    }
+    
+    .page .action .bugreport p {
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .bugreport a {
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .bugreport a:hover {
+        color: var(--text);
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .information .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 100px;
+        
+        width: 100%;
+        height: auto;
+        padding: 25px 0;
+    
+        background-color: var(--frameBackground);
+        border-bottom: 1px solid var(--frameBorder);
+    }
+    
+    .page .information .navigation button.active {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+        background-color: transparent;
+        border: none;
+        outline: none;
+    
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--categoryText);
+    
+        cursor: pointer;
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button:hover {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .section {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        
+        padding: 15px 40px;
+        padding-top: 50px;
+    }
+    
+    .page .information .active {
+        display: flex;
+    }
+    
+    .page .information .section p {
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .overview h1 {
+        margin-bottom: 5px;
+    
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information .overview h2 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .installation .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    
+        margin-top: 8px;
+    }
+    
+    .page .information .installation .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 50px;
+        height: 50px;
+    
+        background-color: var(--footerBackground);
+        border-radius: 60px;
+    
+        font-size: 35px;
+        font-weight: 500;
+        color: var(--text);
+    }
+    
+    .page .information .installation b {
+        color: var(--descriptionBold);
+    }
+    
+    .page .information .installation h1 {
+        margin-bottom: 20px;
+    
+        font-size: 50px;
+        font-weight: 400;
+        color: var(--descriptionTitle);
+    }
+    
+    .page .information .installation h2 {    
+        margin-bottom: 15px;
+
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .information a:hover {
+        color: var(--text);
+    }
 }
 
-
-
-.page .information .installation .line {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 10px;
-
-    margin-top: 8px;
+@media screen and (min-width: 1081px) and (max-width: 1499px) {
+    .page .frame {
+        background-color: var(--frameBackground);
+        border: 1px solid var(--frameBorder);
+        border-radius: 15px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .page .horizontal-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .page .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .page .bottom-border {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--headerBorder);
+    }
+    
+    
+    
+    /*  */
+    
+    
+    
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    
+        position: relative;
+        margin: 0 25px;
+        padding: 87px 0px;
+    }
+    
+    .page .main {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 19px;
+        position: relative;
+        width: 100%;
+        height: 440px;
+    }
+    
+    .page .thumbnail {
+        flex-grow: 1;
+        flex-shrink: 1;
+    
+        position: relative;
+        width: 826px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .page .action {
+        flex-grow: 0;
+        flex-shrink: 0;
+    
+        position: relative;
+        width: 400px;
+        padding: 20px 19px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .page .information { 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+        padding-bottom: 15px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .thumbnail .current {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    /*  */
+    
+    
+    
+    .page .action .about { 
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+    }
+    
+    .page .action .about img { 
+        width: 75px;
+        height: 75px;
+    
+        background-color: transparent;
+        border-radius: 8px;;
+    }
+    
+    .page .action .about .content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 7px;
+    
+        width: 100%;
+    }
+    
+    .page .action .about .content .title { 
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--title);
+    }
+    
+    .page .action .about .content .bottom { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .page .action .about .content .bottom .profile { 
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .page .action .about .content .bottom .profile img {
+        width: 18px;
+        height: 18px;
+    
+        background-color: transparent;
+        border-radius: 28px;
+    }
+    
+    .page .action .about .content .bottom .profile p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--profileText);
+    }
+    
+    .page .action .about .content .bottom .reviews {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .page .action .about .content .bottom .reviews svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 1px;
+    }
+    
+    .page .action .about .content .bottom .reviews svg path {
+        fill: var(--unstar);
+    }
+    
+    .page .action .about .content .bottom .reviews .active-star path {
+        fill: var(--star);
+    }
+    
+    .page .action .about .content .bottom .reviews p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content .download-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .page .action .download { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .page .action .download .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 220px;
+        height: 40px;
+    
+        background-color: var(--accent);
+        border-radius: 4px;
+    
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--buttonText);
+    }
+    
+    .page .action .download .button:hover {
+        background-color: var(--darkAccent);
+    }
+    
+    .page .action .download .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .page .action .download .content span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .page .action .download .content .price {
+        font-size: 14px;
+        font-weight: 600;
+    
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content span div {
+        display: flex;
+        flex-direction: reverserow;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .page .action .download .content .download-icon { 
+        width: 10px;
+        height: 10px;
+    }
+    
+    .page .action .download .content .download-icon path {
+        fill: var(--valueText);
+    }
+    
+    .page .action .download .content .download-count {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content a {
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .download .content a:hover {
+        color: var(--text);
+    }
+    
+    .page .action .details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .page .action .details h2 {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    
+        font-size: 15px;
+        font-weight: 900;
+        color: var(--categoryText);
+    }
+    
+    .page .action .details p {
+        display: flex;
+        justify-content: space-between;
+    
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .details p span {
+        color: var(--profileText);
+    }
+    
+    .page .action .bugreport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: absolute;
+        width: 100%;
+        bottom: -5px;
+    }
+    
+    .page .action .bugreport p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .bugreport a {
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .bugreport a:hover {
+        color: var(--text);
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .information .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 40px;
+        
+        width: 100%;
+        height: 57px;
+        padding: 0 40px;
+    
+        background-color: var(--frameBackground);
+        border-bottom: 1px solid var(--frameBorder);
+    }
+    
+    .page .information .navigation button.active {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+        background-color: transparent;
+        border: none;
+        outline: none;
+    
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--categoryText);
+    
+        cursor: pointer;
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button:hover {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .section {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        
+        padding: 15px 40px;
+    }
+    
+    .page .information .active {
+        display: flex;
+    }
+    
+    .page .information .section p {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .overview h1 {
+        margin-bottom: 5px;
+    
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information .overview h2 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .installation .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    
+        margin-top: 8px;
+    }
+    
+    .page .information .installation .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 20px;
+        height: 20px;
+    
+        background-color: var(--footerBackground);
+        border-radius: 60px;
+    
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text);
+    }
+    
+    .page .information .installation b {
+        color: var(--descriptionBold);
+    }
+    
+    .page .information .installation h1 {
+        margin-bottom: 20px;
+    
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--descriptionTitle);
+    }
+    
+    .page .information .installation h2 {    
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .information a:hover {
+        color: var(--text);
+    }
 }
 
-.page .information .installation .step {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 20px;
-    height: 20px;
-
-    background-color: var(--footerBackground);
-    border-radius: 60px;
-
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text);
-}
-
-.page .information .installation b {
-    color: var(--descriptionBold);
-}
-
-.page .information .installation h1 {
-    margin-bottom: 20px;
-
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--descriptionTitle);
-}
-
-.page .information .installation h2 {    
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--descriptionSubTitle);
-}
-
-.page .information a {
-    font-weight: 500;
-    text-decoration: underline;
-    color: var(--accent);
-}
-
-.page .information a:hover {
-    color: var(--text);
+@media screen and (min-width: 1500px)  {
+    .page .frame {
+        background-color: var(--frameBackground);
+        border: 1px solid var(--frameBorder);
+        border-radius: 15px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .page .horizontal-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .page .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .page .bottom-border {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid var(--headerBorder);
+    }
+    
+    
+    
+    /*  */
+    
+    
+    
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    
+        position: relative;
+        margin: 0 332px;
+        padding: 87px 0px;
+    }
+    
+    .page .main {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 19px;
+        position: relative;
+        width: 100%;
+        height: 440px;
+    }
+    
+    .page .thumbnail {
+        flex-grow: 1;
+        flex-shrink: 1;
+    
+        position: relative;
+        width: 826px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .page .action {
+        flex-grow: 0;
+        flex-shrink: 0;
+    
+        position: relative;
+        width: 400px;
+        padding: 20px 19px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .page .information { 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+        padding-bottom: 15px;
+    
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .thumbnail .current {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    /*  */
+    
+    
+    
+    .page .action .about { 
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+    }
+    
+    .page .action .about img { 
+        width: 75px;
+        height: 75px;
+    
+        background-color: transparent;
+        border-radius: 8px;;
+    }
+    
+    .page .action .about .content { 
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 7px;
+    
+        width: 100%;
+    }
+    
+    .page .action .about .content .title { 
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--title);
+    }
+    
+    .page .action .about .content .bottom { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .page .action .about .content .bottom .profile { 
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .page .action .about .content .bottom .profile img {
+        width: 18px;
+        height: 18px;
+    
+        background-color: transparent;
+        border-radius: 28px;
+    }
+    
+    .page .action .about .content .bottom .profile p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--profileText);
+    }
+    
+    .page .action .about .content .bottom .reviews {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    
+    .page .action .about .content .bottom .reviews svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 1px;
+    }
+    
+    .page .action .about .content .bottom .reviews svg path {
+        fill: var(--unstar);
+    }
+    
+    .page .action .about .content .bottom .reviews .active-star path {
+        fill: var(--star);
+    }
+    
+    .page .action .about .content .bottom .reviews p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content .download-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .page .action .download { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .page .action .download .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 220px;
+        height: 40px;
+    
+        background-color: var(--accent);
+        border-radius: 4px;
+    
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--buttonText);
+    }
+    
+    .page .action .download .button:hover {
+        background-color: var(--darkAccent);
+    }
+    
+    .page .action .download .content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .page .action .download .content span {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .page .action .download .content .price {
+        font-size: 14px;
+        font-weight: 600;
+    
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content span div {
+        display: flex;
+        flex-direction: reverserow;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .page .action .download .content .download-icon { 
+        width: 10px;
+        height: 10px;
+    }
+    
+    .page .action .download .content .download-icon path {
+        fill: var(--valueText);
+    }
+    
+    .page .action .download .content .download-count {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .download .content a {
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .download .content a:hover {
+        color: var(--text);
+    }
+    
+    .page .action .details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .page .action .details h2 {
+        margin-top: 5px;
+        margin-bottom: 2px;
+    
+        font-size: 15px;
+        font-weight: 900;
+        color: var(--categoryText);
+    }
+    
+    .page .action .details p {
+        display: flex;
+        justify-content: space-between;
+    
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .details p span {
+        color: var(--profileText);
+    }
+    
+    .page .action .bugreport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: absolute;
+        width: 100%;
+        bottom: -5px;
+    }
+    
+    .page .action .bugreport p {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--valueText);
+    }
+    
+    .page .action .bugreport a {
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .action .bugreport a:hover {
+        color: var(--text);
+    }
+    
+    
+    /*  */
+    
+    
+    
+    .page .information .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 40px;
+        
+        width: 100%;
+        height: 57px;
+        padding: 0 40px;
+    
+        background-color: var(--frameBackground);
+        border-bottom: 1px solid var(--frameBorder);
+    }
+    
+    .page .information .navigation button.active {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    
+        background-color: transparent;
+        border: none;
+        outline: none;
+    
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--categoryText);
+    
+        cursor: pointer;
+        transition: ease 0.1s;
+    }
+    
+    .page .information .navigation button:hover {
+        border-bottom: 2px solid var(--accent);
+        color: var(--accent);
+        transition: ease 0.1s;
+    }
+    
+    .page .information .section {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        
+        padding: 15px 40px;
+    }
+    
+    .page .information .active {
+        display: flex;
+    }
+    
+    .page .information .section p {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .overview h1 {
+        margin-bottom: 5px;
+    
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information .overview h2 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+        
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--description);
+    }
+    
+    
+    
+    .page .information .installation .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+    
+        margin-top: 8px;
+    }
+    
+    .page .information .installation .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 20px;
+        height: 20px;
+    
+        background-color: var(--footerBackground);
+        border-radius: 60px;
+    
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text);
+    }
+    
+    .page .information .installation b {
+        color: var(--descriptionBold);
+    }
+    
+    .page .information .installation h1 {
+        margin-bottom: 20px;
+    
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--descriptionTitle);
+    }
+    
+    .page .information .installation h2 {    
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--descriptionSubTitle);
+    }
+    
+    .page .information a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: var(--accent);
+    }
+    
+    .page .information a:hover {
+        color: var(--text);
+    }
 }

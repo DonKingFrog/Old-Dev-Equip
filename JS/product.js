@@ -1,67 +1,36 @@
-let dropdowns = document.getElementsByClassName("dropdown")
-
-for (i=0; i < dropdowns.length; i++) {
-    let current = dropdowns[i]
-
-    current.addEventListener("mouseover", () => {
-        current.classList.add("hovered")
-    })
-
-    current.addEventListener("mouseout", () => {
-        current.classList.remove("hovered")
-    })
-}
-
-
-let navbarToggle = document.querySelector("header .right .navbar-toggle")
-
-navbarToggle.addEventListener("click", () => {
-    switch(document.querySelector("header .left .nav").classList.contains("active")) {
-        case true:
-            document.querySelector("header .left .nav").classList.remove("active")
-            break;
-        default: 
-            document.querySelector("header .left .nav").classList.add("active")
-            break;        
-    }
-})
-
-
-
-
-
 let categories = document.querySelectorAll("body nav .collapse-node .content button")
-
-for (i=0; i < categories.length; i++) {
-    let current = categories[i];
+if (categories) {
+    for (i=0; i < categories.length; i++) {
+        let current = categories[i];
+        
+        current.addEventListener("click", () => {
+            current.querySelector("p").classList.add("active");
     
-    current.addEventListener("click", () => {
-        current.querySelector("p").classList.add("active");
-
-        for (j=0; j < categories.length; j++) {
-            if (categories[j] == current) continue; 
-            categories[j].querySelector("p").classList.remove("active")
-        }
-    })
+            for (j=0; j < categories.length; j++) {
+                if (categories[j] == current) continue; 
+                categories[j].querySelector("p").classList.remove("active")
+            }
+        })
+    }
 }
-
 
 
 
 
 let infoCategories = document.querySelectorAll(".page .information .navigation button")
-
-for (i=0; i < infoCategories.length; i++) {
-    let current = infoCategories[i];
+if (infoCategories) {
+    for (i=0; i < infoCategories.length; i++) {
+        let current = infoCategories[i];
+        
+        current.addEventListener("click", () => {
+            current.classList.add("active");
+            document.querySelector(`.page .information .${current.querySelector("p").textContent.toLowerCase()}`).style = "display: flex";
     
-    current.addEventListener("click", () => {
-        current.classList.add("active");
-        document.querySelector(`.page .information .${current.querySelector("p").textContent.toLowerCase()}`).style = "display: flex";
-
-        for (j=0; j < infoCategories.length; j++) {
-            if (infoCategories[j] == current) continue; 
-            infoCategories[j].classList.remove("active");
-            document.querySelector(`.page .information .${infoCategories[j].querySelector("p").textContent.toLowerCase()}`).style = "display: none";
-        }
-    })
+            for (j=0; j < infoCategories.length; j++) {
+                if (infoCategories[j] == current) continue; 
+                infoCategories[j].classList.remove("active");
+                document.querySelector(`.page .information .${infoCategories[j].querySelector("p").textContent.toLowerCase()}`).style = "display: none";
+            }
+        })
+    }
 }

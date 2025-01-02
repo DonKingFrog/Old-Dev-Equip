@@ -1,3 +1,100 @@
+@media screen and (min-width: 200px) and (max-width: 1080px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+    
+        padding: 75px 0;
+    
+        background-color: var(--footerBackground);
+        border-top: 1px solid var(--footerBorder);
+    }
+    
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+    }
+    
+    footer h1 {
+        margin-bottom: 10px;
+    
+        font-family: "Josefin Sans";
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--footerTitle);
+    }
+    
+    footer a {
+        margin: 8px 0;
+    
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--footerText);
+    }
+    
+    footer .reserved {
+        margin-bottom: 50px;
+    }
+
+    footer .reserved img {
+        width: 75px;
+        height: 75px;
+    }
+    
+    footer .reserved .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    footer .reserved h1 {
+        margin-top: 15px;
+    
+        font-size: 50px;
+        font-weight: 600;
+        color: var(--footerTitle);
+    }
+    
+    footer .reserved p {
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--footerText);
+    }
+    
+    footer .socials .wrapper { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
+        gap: 15px;
+    }
+    
+    footer .socials svg { 
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    
+        background-color: transparent;
+        border-radius: 20px;
+    }
+    
+    footer .socials svg:hover {
+        background-color: var(--frameBorder);
+    }
+    
+    footer .socials svg path {
+        fill: var(--footerSocials);
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    
 footer {
     display: flex;
     justify-content: center;
@@ -84,4 +181,5 @@ footer .socials svg:hover {
 
 footer .socials svg path {
     fill: var(--footerSocials);
+}
 }
