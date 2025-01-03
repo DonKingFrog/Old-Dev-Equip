@@ -58,6 +58,8 @@
         align-items: center;
         gap: 15px;
     
+        height: 100%;
+        
         font-size: 55px;
         font-weight: 600;
         letter-spacing: -0.2px;
@@ -78,9 +80,11 @@
         align-items: center;
         gap: 20px;
     
+        height: 171px;
+        width: 171px;
         margin-right: 50px;
     
-        background: transparent;
+        background: transparent; 
         outline: none;
         border: none;
     
