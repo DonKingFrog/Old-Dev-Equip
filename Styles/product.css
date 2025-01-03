@@ -3,12 +3,14 @@ body {
 }
 
 @media screen and (min-width: 200px) and (max-width: 1080px) {
-    .page .frame {
-        background-color: var(--frameBackground);
-        border: 1px solid var(--frameBorder);
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    body {
+        background-color: var(--headerBackground);
+    }   
+
+    .header-shadow {
+        box-shadow: none;
     }
-    
+
     .page .wrapper {
         position: relative;
         width: 100%;
@@ -201,7 +203,7 @@ body {
     
         width: 100%;
         height: 125px;
-        margin-bottom: 25px;
+        margin: 50px 0;
     
         background-color: var(--accent);
         border-radius: 15px;
@@ -244,8 +246,8 @@ body {
     }
     
     .page .action .download .content .download-icon { 
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
     
     .page .action .download .content .download-icon path {
@@ -253,7 +255,7 @@ body {
     }
     
     .page .action .download .content .download-count {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 600;
         color: var(--valueText);
     }
@@ -281,7 +283,7 @@ body {
         margin-top: 5px;
         margin-bottom: 2px;
     
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 900;
         color: var(--categoryText);
     }
@@ -290,7 +292,7 @@ body {
         display: flex;
         justify-content: space-between;
     
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 600;
         color: var(--valueText);
     }
@@ -312,13 +314,13 @@ body {
     }
     
     .page .action .bugreport p {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 600;
         color: var(--valueText);
     }
     
     .page .action .bugreport a {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 600;
         text-decoration: underline;
         color: var(--accent);
@@ -342,7 +344,7 @@ body {
         
         width: 100%;
         height: auto;
-        padding: 25px 0;
+        padding: 50px 0;
     
         background-color: var(--frameBackground);
         border-bottom: 1px solid var(--frameBorder);
@@ -364,7 +366,7 @@ body {
         border: none;
         outline: none;
     
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 600;
         text-decoration: none;
         color: var(--categoryText);
@@ -393,7 +395,7 @@ body {
     }
     
     .page .information .section p {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 400;
         color: var(--description);
     }
