@@ -8,6 +8,13 @@ body {
 
 
 @media screen and (min-width: 200px) and (max-width: 1080px) {
+    .page .back {
+        font-size: 50px;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--valueText); 
+    }
+
     .page .title {
         margin-bottom: 50px;
 
