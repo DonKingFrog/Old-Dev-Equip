@@ -1,5 +1,9 @@
 body {
-    background-color: var(--background);
+    background-color: var(--headerBackground);
+}
+
+.header-shadow {
+    box-shadow: none;
 }
 
 
