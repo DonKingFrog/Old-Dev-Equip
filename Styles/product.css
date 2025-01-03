@@ -200,13 +200,13 @@ body {
         justify-content: center;
     
         width: 100%;
-        height: 100px;
+        height: 125px;
         margin-bottom: 25px;
     
         background-color: var(--accent);
         border-radius: 15px;
     
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 600;
         color: var(--buttonText);
     }
@@ -219,7 +219,7 @@ body {
         display: flex;
         flex-direction: column;
 
-        margin-bottom: 15px;
+        margin-bottom: 50px;
     }
     
     .page .action .download .content span {
@@ -230,7 +230,7 @@ body {
     }
     
     .page .action .download .content .price {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 600;
     
         color: var(--valueText);
@@ -259,7 +259,7 @@ body {
     }
     
     .page .action .download .content a {
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 600;
         text-decoration: underline;
         color: var(--accent);
@@ -273,6 +273,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 35px;
+
+        margin-top: 50px;
     }
     
     .page .action .details h2 {
@@ -683,11 +685,11 @@ body {
         background-color: var(--accent);
         border-radius: 4px;
     
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 600;
         color: var(--buttonText);
     }
-    
+
     .page .action .download .button:hover {
         background-color: var(--darkAccent);
     }
