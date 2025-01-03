@@ -4,10 +4,6 @@ body {
     background-color: var(--background);
 }
 
-.header-shadow {
-    box-shadow: none;
-}
-
 @media screen and (min-width: 200px) and (max-width: 1080px) {
         
     .page {
