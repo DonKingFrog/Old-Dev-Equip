@@ -12,7 +12,7 @@
 @media screen and (min-width: 200px) and (max-width: 1080px) {     
     header { 
         position: sticky;
-        height: 114px;
+        height: 171px;
     
         background-color: var(--headerBackground); 
         box-sizing: border-box;
@@ -58,7 +58,7 @@
         align-items: center;
         gap: 15px;
     
-        font-size: 45px;
+        font-size: 55px;
         font-weight: 600;
         letter-spacing: -0.2px;
         color: #242424;
@@ -67,8 +67,8 @@
     }
     
     header .logo img {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     
     header .right .navbar-toggle {
@@ -76,9 +76,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     
-        margin-right: 25px;
+        margin-right: 50px;
     
         background: transparent;
         outline: none;
@@ -88,7 +88,7 @@
     }
     
     header .right .navbar-toggle span {
-        width: 50px;
+        width: 75px;
         height: 5px;
     
         background-color: #333333;
