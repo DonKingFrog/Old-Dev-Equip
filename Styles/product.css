@@ -107,7 +107,7 @@ body {
     .page .action .about { 
         display: flex;
         flex-direction: row;
-        gap: 17px;
+        gap: 50px;
     }
     
     .page .action .about img { 
@@ -142,19 +142,19 @@ body {
     .page .action .about .content .bottom .profile { 
         display: flex;
         flex-direction: row;
-        gap: 5px;
+        gap: 15px;
     }
     
     .page .action .about .content .bottom .profile img {
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
     
         background-color: transparent;
         border-radius: 28px;
     }
     
     .page .action .about .content .bottom .profile p {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 600;
         color: var(--profileText);
     }
@@ -163,12 +163,13 @@ body {
         display: flex;
         justify-content: right;
         align-items: center;
+        margin-right: 1cqh;
     }
     
     .page .action .about .content .bottom .reviews svg {
-        width: 35px;
-        height: 35px;
-        margin-right: 1px;
+        width: 45px;
+        height: 45px;
+        margin-right: 3px;
     }
     
     .page .action .about .content .bottom .reviews svg path {
@@ -180,7 +181,7 @@ body {
     }
     
     .page .action .about .content .bottom .reviews p {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 600;
         color: var(--valueText);
     }
@@ -292,7 +293,7 @@ body {
         display: flex;
         justify-content: space-between;
     
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 600;
         color: var(--valueText);
     }
@@ -314,13 +315,13 @@ body {
     }
     
     .page .action .bugreport p {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 600;
         color: var(--valueText);
     }
     
     .page .action .bugreport a {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 600;
         text-decoration: underline;
         color: var(--accent);
