@@ -7,7 +7,6 @@ function runHeader() {
         
 
         current.addEventListener("mouseover", () => {
-            console.log("Yipee");
             current.classList.add("hovered")
         })
 

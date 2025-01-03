@@ -157,6 +157,7 @@
     }
     
     header .left .tag svg {
+        display: none;
         width: 35px;
     
         transition: ease 0.1s;
