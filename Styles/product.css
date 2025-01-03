@@ -445,7 +445,7 @@ body {
         background-color: var(--footerBackground);
         border-radius: 60px;
     
-        font-size: 35px;
+        font-size: 50px;
         font-weight: 500;
         color: var(--text);
     }
