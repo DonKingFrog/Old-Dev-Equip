@@ -10,25 +10,37 @@ body {
 @media screen and (min-width: 200px) and (max-width: 1080px) {
     .page .back {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: left;
         align-items: center;
+        gap: 15px;
 
-        width: 100px;
+        width: auto;
         height: 100px;
         margin-bottom: 25px;
+        padding: 0 25px;
 
-        background-color: var(--accent);
+        background-color: #eaeaea;
         border-radius: 25px;
+
+        text-decoration: none;
+    }
+
+    .page .back p {
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--text);
     }
 
     .page .back svg {
         rotate: 90deg;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     .page .back svg path {
-        fill: var(--buttonText);
+        fill: var(--text);
+        opacity: 50%;
     }
 
     .page .title {
@@ -145,7 +157,7 @@ body {
         display: none;
         position: absolute;
     }
-    
+
     .page .title {
         margin: 0;
         color: var(--descriptionSubTitle);
