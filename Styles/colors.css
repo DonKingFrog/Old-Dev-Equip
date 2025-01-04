@@ -32,6 +32,9 @@
 
     font-family: "Segoe UI";
     text-decoration: none;
+
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 body {
